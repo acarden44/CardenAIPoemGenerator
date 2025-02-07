@@ -3,37 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
-
     <title>AI Poem Generator</title>
   </head>
   <body>
     <div class="container">
       <header>
-        <h1>Welcome to the AI Poem Generator</h1>
+        <h1>AI Poem Generator</h1>
       </header>
+
       <main>
-        <form>
+        <form id="poem-generator-form">
           <input
             type="text"
             placeholder="Enter the topic of the poem"
             autofocus
-            autocomplete="off"
             required
+            autocomplete="off"
             class="instructions"
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="poem">
-          Poem will go here
-          <br />
-          and more will be here
-        </div>
+        <div class="poem" id="poem"></div>
       </main>
-    </div>
-    <footer>
-      <p>
-        This project was coded by
+
+      <footer>
+        This AI project was coded by
         <a href="https://github.com/acarden44" target="_blank">
           💜 April Carden</a
         >
@@ -46,9 +42,9 @@
         and
         <a href="https://cardenaipoem.netlify.app/" target="_blank"
           >hosted on Netlify</a
-        >
-      </p>
-    </footer>
+        >.
+      </footer>
+    </div>
 
     <script src="src/index.js"></script>
   </body>
